@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hotspot V7.0</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="css/estilos-hot-spot.css">
+	<style>
+		.custom-tooltip {
+			--bs-tooltip-bg: var(--bs-gray-200);
+			--bs-tooltip-color: #444444;
+			--bs-tooltip-max-width: 500px;
+			--bs-tooltip-opacity: 1;
+			-webkit-filter: drop-shadow(2px 4px 0.5rem #444);
+			filter: drop-shadow(2px 4px 0.5rem #444);
+
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 1em;
+
+			min-width: 300px;
+			-webkit-user-select: none;
+			-moz-user-select: -moz-none;
+			-ms-user-select: none;
+			-o-user-select: none;
+			user-select: none;
+		}
+
+		.custom-tooltip>.tooltip-inner>h1,
+		.custom-tooltip>.tooltip-inner>p,
+		.custom-tooltip>.tooltip-inner>ul,
+		.custom-tooltip>.tooltip-inner>ol {
+			text-align: left;
+			color: #444444;
+		}
+
+		.custom-tooltip>.tooltip-inner>h1 {
+			font-size: 1.5em;
+			font-weight: 600;
+		}
+	</style>
+</head>
+
+<body>
+	<section class="hotspot" id="hotspot1">
+		<div class="container">
+			<img src="img/esquema_01.png">
+			<div class="all-tooltip">
+				<div class="tooltip tooltip-1">
+					<div tabindex="1" class="pin" data-bs-toggle="tooltip" data-bs-placement="top"
+						data-bs-custom-class="custom-tooltip" data-bs-html="true"
+						data-bs-title="<h1>Spot 1</h1><ul><li>Lorem ipsum dolor sit amet consectetur adipisicing.</li><li>Nulla illum mollitia placeat! Id, est dignissimos.</li></ul>">
+					</div>
+				</div>
+				<div class="tooltip tooltip-2">
+					<div tabindex="2" class="pin" data-bs-toggle="tooltip" data-bs-placement="top"
+						data-bs-custom-class="custom-tooltip" data-bs-html="true"
+						data-bs-title="<h1>Spot 2</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, natus.</p><p>Lorem ipsum dolor sit amet consectetur.</p>">
+					</div>
+				</div>
+				<div class="tooltip tooltip-3">
+					<div tabindex="3" class="pin" data-bs-toggle="tooltip" data-bs-placement="top"
+						data-bs-custom-class="custom-tooltip" data-bs-html="true"
+						data-bs-title="<h1>Spot 3</h1><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam ratione velit unde hic vel.<p>">
+					</div>
+				</div>
+				<div class="tooltip tooltip-4">
+					<div tabindex="4" class="pin" data-bs-toggle="tooltip" data-bs-placement="top"
+						data-bs-custom-class="custom-tooltip" data-bs-html="true"
+						data-bs-title="<h1>Spot 4</h1><ol><li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, praesentium voluptates?</li><li>Cumque nesciunt dolor doloremque dolores quasi consequatur ducimus, veniam quas !</li></ol>">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="hotspot" id="hotspot2">
+		<div class="container">
+			<img src="img/img_02.jpg">
+			<div class="all-tooltip">
+				<div class="tooltip tooltip-5">
+					<div tabindex="5" class="pin" data-bs-toggle="tooltip" data-bs-placement="top"
+						data-bs-custom-class="custom-tooltip" data-bs-html="true"
+						data-bs-title="<h1>Spot 1</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, natus.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officiis distinctio deserunt explicabo, aliquid id.</p>">
+					</div>
+				</div>
+				<div class="tooltip tooltip-6">
+					<div tabindex="6" class="pin" data-bs-toggle="tooltip" data-bs-placement="top"
+						data-bs-custom-class="custom-tooltip" data-bs-html="true"
+						data-bs-title="<h1>Spot 2</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, natus.</p><p>Lorem ipsum dolor sit amet consectetur.</p>">
+					</div>
+				</div>
+				<div class="tooltip tooltip-7">
+					<div tabindex="7" class="pin" data-bs-toggle="tooltip" data-bs-placement="top"
+						data-bs-custom-class="custom-tooltip" data-bs-html="true"
+						data-bs-title="<h1>Spot 3</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus molestiae accusantium magni ex numquam eveniet, doloremque dolores impedit beatae quas!</p>">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</body>
+<script src="js/hotspot.js"></script>
+<script>
+	hotspot("hotspot1");
+	hotspot("hotspot2");
+</script>
+
+</html>

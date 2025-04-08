@@ -1,0 +1,179 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+section.hotspot[id^='hotspot'] {
+	--color-cita: #eee;
+	--color-sonar: #2c71c7;
+	--tam-sonar: 15px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	-webkit-user-select: none;
+	-moz-user-select: -moz-none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	width: 80%;
+	max-width: 950px;
+	margin: 2em auto;
+}
+
+section.hotspot[id^='hotspot'] .container {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+	box-shadow: 0 0 0 10px #fff, 0 15px 50px;
+}
+
+section.hotspot[id^='hotspot'] .container img {
+	height: 100%;
+	width: 100%;
+}
+
+section.hotspot[id^='hotspot'] .all-tooltip {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+section.hotspot[id^='hotspot'] .tooltip {
+	opacity: 1;
+	position: static;
+}
+
+section.hotspot[id^='hotspot'] .tooltip-content {
+	position: absolute;
+	background-color: var(--color-cita);
+	padding: 8px;
+	width: 90vw;
+	max-width: 300px;
+	opacity: 0;
+	left: -50%;
+	z-index: 2;
+	-webkit-filter: drop-shadow(2px 4px 10px #444);
+	filter: drop-shadow(2px 4px 10px #444);
+	transition: opacity .5s ease-in-out, margin-top .5s step-start, z-index .1s step-start;
+}
+
+section.hotspot[id^='hotspot'] .tooltip-content .arrow {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border: 10px solid transparent;
+	border-bottom-color: var(--color-cita);
+	top: 0px;
+	left: 50%;
+	transform: translate(-50%, -100%) rotate(0deg);
+}
+
+section.hotspot[id^='hotspot'] .tooltip-content .content h2 {
+	font-size: 1.3em;
+}
+
+section.hotspot[id^='hotspot'] .tooltip-content .content p {
+	line-height: normal;
+}
+
+section.hotspot[id^='hotspot'] .pin {
+	position: absolute;
+	margin: 0;
+	content: "";
+	height: var(--tam-sonar);
+	width: var(--tam-sonar);
+	background-color: var(--color-sonar);
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 10;
+}
+
+section.hotspot[id^='hotspot'] .pin:before,
+section.hotspot[id^='hotspot'] .pin:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: var(--color-sonar);
+	border-radius: 50%;
+}
+
+section.hotspot[id^='hotspot'] .pin:before {
+	-webkit-animation: efecto-sonar 1s ease-out infinite;
+	animation: efecto-sonar 1s ease-out infinite;
+}
+
+section.hotspot[id^='hotspot'] .pin:after {
+	-webkit-animation: efecto-sonar 1s 0.5s ease-out infinite;
+	animation: efecto-sonar 1s 0.5s ease-out infinite;
+}
+
+section.hotspot[id^='hotspot'] .tooltip-1 .pin {
+	top: 20%;
+	left: 61%;
+}
+
+section.hotspot[id^='hotspot'] .tooltip-2 .pin {
+	top: 52%;
+	left: 83%;
+}
+
+section.hotspot[id^='hotspot'] .tooltip-3 .pin {
+	top: 85%;
+	left: 80%;
+}
+
+section.hotspot[id^='hotspot'] .tooltip-4 .pin {
+	top: 85%;
+	left: 20%;
+}
+
+section.hotspot[id^='hotspot'] .tooltip-5 .pin {
+	top: 52%;
+	left: 14%;
+}
+
+section.hotspot[id^='hotspot'] .tooltip-6 .pin {
+	top: 11%;
+	left: 32%;
+}
+
+section.hotspot[id^='hotspot'] .tooltip-7 .pin {
+	top: 73%;
+	left: 75%;
+}
+
+section.hotspot[id^='hotspot'] .pin:hover~.tooltip-content {
+	opacity: 1;
+	transition-timing-function: linear, step-end, step-end;
+	z-index: 20;
+}
+
+@-webkit-keyframes efecto-sonar {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+
+	100% {
+		transform: scale(3);
+		opacity: 0;
+	}
+}
+
+@keyframes efecto-sonar {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+
+	100% {
+		transform: scale(3);
+		opacity: 0;
+	}
+}
