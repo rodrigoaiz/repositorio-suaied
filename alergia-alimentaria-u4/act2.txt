@@ -1,0 +1,89 @@
+::u4_act2_p1::
+¿Cuál es la piedra angular del manejo nutricional en la alergia alimentaria pediátrica? {
+=Plan de evitación de alérgenos individualizado
+~Suplementación de vitamina D
+~Dieta rica en proteínas
+~Terapia farmacológica
+}
+#Recuerda que, en la mayoría de los casos, no existe una cura definitiva para las alergias alimentarias. La sensibilización puede producirse por el consumo de un alimento o por entrar en contacto con trazas del alérgeno, lo que provoca que el sistema inmunológico desencadene una respuesta de hipersensibilidad que puede ir desde síntomas leves hasta reacciones graves y potencialmente mortales, como la anafilaxia.
+
+::u4_act2_p2::
+¿Qué indicadores se utilizan principalmente para medir el crecimiento en lactantes y niños? {
+=Peso, talla, índice de masa corporal y circunferencia de la cabeza
+~Sólo el peso y la talla
+~Índice de masa corporal y circunferencia abdominal
+~Peso y presión arterial
+}
+#Considera que todos los parámetros antropométricos, en su conjunto, proporcionan información importante sobre la salud general, nutrición y el desarrollo del cuerpo de lactantes y niños en comparación con estándares de crecimiento. Estos indicadores ayudan a detectar posibles problemas de salud tempranos, permitiendo intervenciones oportunas que pueden mejorar el bienestar a largo plazo de la niña o el niño.
+
+::u4_act2_p3::
+¿Cuál es una de las principales preocupaciones nutricionales en niños con alergia a la proteína de la leche de vaca? {
+=Deficiencia de hierro
+~Deficiencia de vitamina C
+~Deficiencia de yodo
+~Deficiencia de ácido fólico
+}
+#La dieta de eliminación de leche en personas con alergia a la proteína de la leche de vaca puede tener implicaciones por la disminución en la ingesta de yodo, el cual es crucial para el funcionamiento de la tiroides y para el desarrollo del cerebro, especialmente en niños pequeños. Por lo tanto, al eliminar la leche, es fundamental asegurarse de mantener la dieta equilibrada y que se obtenga este mineral de otras fuentes.
+
+::u4_act2_p4::
+Durante una visita a un restaurante, una paciente alérgica a frutos secos desea pedir como postre un flan con caramelo. Al preguntar al mesero si el postre contiene frutos secos, él le asegura que no; sin embargo, al probar las primeras cucharadas, la paciente comienza a sentir comezón en la lengua y sensación de cuerpo extraño en la garganta. Al cuestionar nuevamente al mesero, se descubre que el postre originalmente contenía nueces, pero el mesero las retiró antes de servirlo. ¿Qué acción pudo haber evitado esta confusión? {
+=Portar siempre una tarjeta con información detallada de sus alergias.
+~Evitar comer fuera de casa.
+~Pedir hablar con el chef.
+~No comer en restaurantes que no tengan lista de ingredientes en el menú.
+}
+#Recuerda que es importante que la paciente o el paciente siempre informen sobre la alergia que padecen y los alimentos que la pueden provocar; deben contemplar que las cadenas de restaurantes utilizan el mismo menú e ingredientes en todos sus locales, lo que puede ayudar a anticipar las exposiciones. Además, se sugiere evitar restaurantes con riesgo elevado de contaminación cruzada, como bufés, lugares que utilizan alimentos precocidos o aquellos que se especializan en el alérgeno que se quiere evitar —por ejemplo, pizzerías en alérgicos a lácteos o trigo—. Una sugerencia para la paciente sería que consulte con antelación el menú y evite acudir en los horarios con más concurrencia, ya que en esos momentos son más comunes los errores o descuidos por parte del personal.
+
+::u4_act2_p5::
+¿Cuál es el objetivo principal de la intervención nutricional en los tres primeros años de vida? {
+~Prevenir el sobrepeso.
+~Reducir el consumo de alimentos alergénicos.
+=Influir en el riesgo de desarrollar alergias mediante mecanismos epigenéticos.
+~Garantizar el consumo de proteínas.
+}
+#Recuerda que la epigenética puede influir en la aparición y el desarrollo de enfermedades alérgicas, incluidas las alergias alimentarias. La epigenética se refiere a los cambios en la expresión génica que no implican alteraciones en la secuencia del ADN, sino que están regulados por mecanismos como la metilación del ADN, las modificaciones de las histonas y la regulación del ARN no codificante. Estos cambios pueden ser influenciados por factores ambientales, como la dieta, la exposición a contaminantes, el estrés, entre otros.
+
+::u4_act2_p6::
+¿A qué edad es recomendable introducir alimentos alergénicos en lactantes de bajo riesgo? {
+~Antes de los cuatro meses
+=Entre los seis y 12 meses
+~Entre los cuatro y seis meses
+~Después del primer año
+}
+#Los lactantes que no tienen antecedentes familiares de alergias alimentarias graves —como alergias al cacahuate, mariscos, etcétera— pueden introducir estos alimentos en su dieta sin un riesgo elevado. Es importante seguir las pautas apropiadas, ofrecer alimentos de manera gradual y estar atento a cualquier reacción adversa. Siempre es aconsejable consultar con un pediatra antes de introducir nuevos alimentos, especialmente si el bebé tiene factores de riesgo.
+
+::u4_act2_p7::
+¿Cuál es el riesgo principal asociado con las dietas de eliminación en niñas o niños con alergias alimentarias?{
+~Aumento de peso excesivo
+=Deficiencias nutricionales
+~Hipervitaminosis
+~Intolerancia a la lactosa
+}
+#Al eliminar alimentos comunes como la leche, el huevo, el trigo, los frutos secos o el pescado, las infancias pueden quedar sin fuentes importantes de nutrientes esenciales, como proteínas, calcio, vitamina D, ácidos grasos omega 3, hierro y vitaminas del complejo B. Esto puede afectar su crecimiento y desarrollo.
+
+::u4_act2_p8::
+¿Qué suplemento no está recomendado actualmente para la prevención de alergias alimentarias?{
+~Vitamina D
+~Omega 3
+~Prebióticos
+=Todos los anteriores
+}
+#Aunque algunos estudios han sugerido que ciertos suplementos, como los probióticos o los ácidos grasos omega 3, podrían tener un efecto positivo en la prevención de enfermedades alérgicas, los resultados no son consistentes y las evidencias aún no son lo suficientemente fuertes para recomendar estos suplementos de forma generalizada para la prevención de alergias alimentarias.
+
+::u4_act2_p9::
+¿Cuál es el micronutriente más comúnmente deficiente en niñas o niños con alergias alimentarias mediadas por IgE?{
+~Hierro
+~Zinc
+=Vitamina D
+~Magnesio
+}
+#Recuerda que esta vitamina desempeña un papel crucial en la regulación del sistema inmunológico. Su deficiencia ha sido asociada con un mayor riesgo de desarrollar diversas enfermedades alérgicas, incluidas las alergias alimentarias mediadas por IgE, pero esta relación no es completamente comprendida y continúa siendo objeto de estudio.
+
+::u4_act2_p10::
+¿Cuál es el enfoque principal del manejo dietético en la alergia alimentaria?{
+~Aumentar la ingesta de alérgenos para crear tolerancia.
+=Evitar la reacción alérgica eliminando el alimento responsable.
+~Introducir alimentos alergénicos de manera temprana.
+~Reducir el consumo de líquidos.
+}
+#El manejo dietético de la alergia alimentaria se basa principalmente en este enfoque, junto con estrategias para garantizar una nutrición adecuada y la minimización de riesgos asociados con la eliminación de alimentos de la dieta.

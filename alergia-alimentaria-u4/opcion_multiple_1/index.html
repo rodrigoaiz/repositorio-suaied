@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script>
+		if (!window.parent.data_crm) {
+			(function (i, s, o, g, r, a, m) { i["GoogleAnalyticsObject"] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
+			ga("create", "UA-158134453-1", { "cookieDomain": "auto" });
+			ga("set", "anonymizeIp", true);
+			ga('set', 'dimension1', "CUAIEED");
+			ga('set', 'dimension2', "RECURSOS EDUCATIVOS ABIERTOS");
+			ga('set', 'dimension3', "RECURSOS EDUCATIVOS MULTIMEDIA");
+			ga('set', 'dimension4', "2023");
+			ga('set', 'dimension5', "EVALUACIÓN");
+			ga('set', 'dimension6', "RA07-23");
+			ga('set', 'dimension7', "OPCIÓN MÚLTIPLE");
+			ga('set', 'dimension8', "VERSIÓN 23.0");
+			ga("set", "metric1", 1); ga("set", "metric2", 2); ga("set", "metric3", 3); ga("set", "metric4", 4); ga("set", "metric5", 5); ga("set", "metric6", 6); ga("set", "metric7", 7); ga("set", "metric8", 8);
+			ga("send", "pageview");
+		}
+	</script> -->
+	<title>Autoevaluación. Abordaje integral de la alergia alimentaria
+	</title>
+	<meta charset="utf-8" />
+	<!--
+	*v9.2: JLBG Abr 21, 2023: Se agrega parámetro mezclarPorIntentos, para que de intento a intento se vuelvan o no a mezclar los reactivos; true se mezclan; false se muestran siempre en el mismo orden del primer intento
+	*v9.1: JLBG Ene 9, 2023: Se agrega programación para que en móvil no se despliegue la [i] si las instrucciones están vacías; se agrega parámetro califXaciertos para obtener la calificación
+	*v9.0: JLBG dic 10, 2021: Se reorganizó el recurso, las palomitas y taches son con efecto pulso; se actualizaron versiones de fontAwesome 5.15, Bootstrap 5.1.3 y jQuery 3.6
+	*v8.0: RAAR sep 24,2020: Cambios formato JBecerril primer semestre 2020, carrusel, CUAED-> CUAIEED
+	*v7.0.1: RAAR sep 30,2020: Se corrigió bug de bandera siguienteIntentoBlanco
+	*v6.9: RAAR May 18,2020: remuevo texto de ayuda obsoleto en listaReactivos.js,
+	*v6.8: RAAR Mar 3,2020: Librerías locales CUAED, Agrego flecha scroll arriba, codigo google analytics, condiciones CRM, lorem ipsum
+	*v6.7: JLBG RAAR sep 30,19: Corrijo aire a la derecha de respuestas en modo movil y se corrige opacidad y tamaño de font en tooltips.
+	*v6.6: RAAR Ago 9,19: Agrego bandera 'calificarEnTiempoReal', para indicar correctas/incorrectas al seleccionar. Cambio nombre de archivo completarArrastrando.js a opcionMultiple.js
+	*v6.5: RAAR jun 20,19: Bug en selección de respuesta, marco verde, nombres de funciones (abandono notacion CA), eliminacion de funciones y clases draggable.....
+	*v6.4: RAAR may 25,19: Derivo de CA 6.3
+	*v6.3: RAAR may 17,19: Versiono la libreria scorm y depuro los secciones de abrir scorm y salvado scorm.
+	*v6.2: JLBG abr 1,19: Cambio de icono instrucciones, formato de pantalla inicial, elminiado de espacios, marcado textos .ocupado.correcto >.clonado.RAAR: Cambio font-weight: bold; a @media, cambio en a .mostrar { display:"";
+	*v6.1: RAAR abr 1,19: cambio nombre objetivoDobleClick a objetivoSeleccionRapida, implemento seleccionRapida con un solo touch con recursoTransforme=true, manejo de clases para bordes droppable
+	*v6.0: RAAR Mar 29,19: if debug>document.write (debug), en el grabado (ambscorm) de calificacion modifico la funcion (else) para que al detectar que hay barra de avance sepa el recurso que guarda en objetives.
+	*v5.9: RAAR Mar 29,19: flag recursoTransformer para autoajuste a portable, intruccion inicial inteligente, clase avisaFaltante, objetivoDobleClick, visible/Invisible , pared en carrusel...
+	*v5.8: RAAR Mar 25,19: Corrección a verLongitud para despliegue correcto, cambio <sup> de las -retros por arroba- a <span>
+	*v5.7: RAAR Mar 24,19: retro sweet alert inteligent, cambio paloma y tache reactivo al inicio, en estilos.css declaro !important en linea 119 ".reactivos .lista-preguntas .sub-item .droppable.ocupado.correcto{" de la version 3.8 a la 3.9 aparece un element.style que afecta los droppable, no encuentro de donde...
+	*v5.6: RAAR Mar 21,19: Implemento retro tooltip para reactivos con entorno esMobil, corrijo direccionamiento a retro por arroba por clase y abandono next()
+	*v5.5: RAAR Mar 21,19: jalo de verdadero_falso la implementación de tooltips para retro de JLBG, implemento flag contextual, esMobil, retro por arroba contralada por esMobil.
+	*v5.4: JLBG Mar 20,19: Corrección de impresión longitud texto, implemento calculaLong(), crm->verLongitud booleano
+	*v5.3: RAAR Mar 4,19: agrego funcion soloAbecedario, uso para mejorar la inclusión de la primera palabra del texto de respuesta como clase en los draggable, esto para poder dar formato...
+	*v5.2: RAAR Feb 28,19:  agrego llave de cierre faltante....@media (min-width:900px)
+	*v5.1: RAAR Feb 20,19: agrego function yaUsada() para evitar misma respuesta en dos casillas del mismo reactivo, agrego iconos y funciones menu accesibilidad,
+	*v5.0: RAAR Feb 20,19: Agrego bandera debug para desplegar las respuestas con -sup- para facilitar tal proceso..
+	*v4.9: RAAR Nov 21,18: En estilos.css en linea ".sub-item > p" elimino "display: inline;", quiero que se comporte con el default "block", agrego variable y funcion "vBrowser = versionBrowser();" para identificacion de entorno...
+	*v4.8: RAAR Nov 14,18: dejo de usar includes y pongo indexOf, para compatibilidad con IE
+	*v4.7: RAAR Oct 26,18: Implemento bandera forzarRespuestaA para los casos de multiples respuestas para una casilla pero solo se puede usar una vez la respuesta
+	*v4.6: RAAR Oct 14,18: En "if (ambSCORM)", agrego código para salvar cuando es un solo recurso y no un conjunto. En "function reiniciar()" agrego blanco.png para mejorar despliegue de imagenes al responder
+	*v4.5: MRobles Oct 14,18: En estilos.css->.lista-respuestas linea 64 cambio background:white; a background:transparent; para que se vean los botones cuando se vuelve responsivo
+	*v4.5: RAAR Oct 10,18: Agrego recomendaciones de MCaloch en if (ambSCORM), ademas pongo console.log('STATUS: para leer con get la calificacion grabada
+	*v4.4: RAAR Oct 8,18: pongo el attr al principio, por que en el reintento si lea la imagen,jq360(imagen).find(".draggable").attr("data",dataArrastrable)
+	*v4.3: RAAR Sep 24,18: Agrego textoRetroGeneral para poner textos independientes de calificacion.
+	*v4.2: RAAR Sep 24,18: Altero el CSS en .clonado para que funcione la estetica de textos e imagenes, retro individual en blanco no se despliega el cuadro...
+	*v4.1: RAAR Sep 13,18: Se corrige bug al reiniciar en blanco al contestar todas bien, para que al reiniciar colocara las casillas de respuesta, cambio ready() a reactivos.js
+	*v4.0: RAAR Sep 4,18: Se valida que no truene cuando no tenga retro para cada arroba
+	*v3.9: RAAR Ago 18,18: Implemento respuestaRapida, corrijo reverso mostrarMensaje(), y corrijo bug, falla al leer casillas de respuesta, en limpiaRespuestas();
+	*v3.8: RAAR Ago 13,18: Se implementan casillas droppable en seccion preguntas y retro correcta/incorrecta por arroba
+	*v3.7: RAAR Ago 13,18: Bug, se implementa data-listaResp,para ubicar segmento, y se precisa la busqueda agregando pipes, implementeo texto respuesta como clase para dar estilo por casilla
+	*v3.6: RAAR Jun 25,18: Bug, a partir del segundo intento las casillas de respuesta solo se podian usar una vez, data-quedan=data-quedanInicial
+	*v3.5: RAAR Jun 25,18: Admite respuestas con comas internas para textos largos, y corregi que admita dobles respuestas por casilla que ya no funcionaba por implementar 'segmentos'
+	*v3.4: RAAR Jun 25,18: Implemento botones de paginacion, agrego bandera 'elementosPorSegmento' para establecer elementos por pagina...
+	*v3.3: RAAR Jun 20,18, Implemento la bandera 'ponerNumeroPreguntas' para poner cuantas preguntas son en el numeral, implemento 'admitirErronea' para que en ciertos ejercicios de autoevaluacion solo acepte correctas al apagar la bandera, incluyo transform en css '.respuestas.col-md-6' para centrar verticalmente las respuestas y evitar que se salgan de pantalla
+	*v3.2: RAAR Jun 19,18, Quito el reverso en el switch de iniciar(), agrego bandera siguienteIntentoBlanco para reiniciar en blanco...
+	*v3.1: RAAR Jun 12,18, Quito el reverso a asignar evaluacion,agrego CalificaReactivo para controlar como se cuentan las correctas, corrijo el reinicio para que se adapte a este funcionamiento...
+	*v3.0: RAAR Jun 12,18, Elimino bandera EsTexto,  el recurso detecta que es y lo implementa, ya no se requieren dos matrices de reactivos
+	*v2.9: RAAR Jun 12,18, elimino reverso en funcion revisaBuenas(), elimino bandera mezclarReactivos solo se queda mezclarPreguntas
+	*v2.8: RAAR May 23,18, Agrego bandera mezclarReactivos, para permitir que se revuelvan aun con las que no son visibles....
+	*RAAR May 7, 2018, Acepto multiples respuestas por arroba
+	*RAAR Mar 04,2018, Agrego retro para cada arroba
+	*RAAR Marzo-2018, Corrección de insertar dos veces el texto en las respuestas, quitar el número de pregunta....
+   	*RAAR Marzo-2018, Acepta n respuestas y salto de linea...
+   	*RAAR Febrero-2018, Acepta respuestas sin caja de preguntas por lo que puede haber mas respuestas q preguntas...
+  	*JLBG 2017-11-15: completaArrastrando.js utiliza jquery, jquery.ui.touch-punch y jqueryui para su funcionamiento
+-->
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Opcion Multiple" />
+	<meta name="keywords" content="UNAM, CUAIEED" />
+	<meta name="author" content="UNAM CUAIEED" />
+	<meta name="news_keywords" content="UNAM, CUAIEED" />
+	<meta name="generator" content="UNAM CUAIEED" />
+	<meta property="og:site_name" content="Opcion Multiple" />
+	<meta itemprop="name" content="UNAM, CUAIEED" />
+	<meta itemprop="image" content="" />
+	<meta itemprop="description" content="Opcion Multiple" />
+	<meta property="og:title" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:type" content="activity" />
+	<meta property="og:description" content="Opcion Multiple" />
+	<meta property="og:image" content="" />
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script>
+		var jq360 = jQuery.noConflict();
+	</script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.bundle.min.js"></script>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+
+	<link rel="stylesheet" href="css/all.css">
+
+	<link rel="stylesheet" href="css/estilos.css" />
+	<script src="js/listaReactivos.js"></script>
+	<script src="js/configRecurso.js"></script>
+	<script src="js/reactivos.js"></script>
+	<script src="js/opcionMultiple.js"></script>
+
+	<script src="js/sweetalert.min.js"></script>
+	<link rel="stylesheet" href="css/sweetalert.css" />
+
+	<script src="./SCORM/conectividadSCORM.js"></script>
+</head>
+
+<body>
+	<noscript><br />Necesitas tener habilitado Javascript para poder hacer uso de la funcionalidad completa</noscript>
+	<section class="container opcion-multiple">
+		<div class="row encabezado">
+			<div class="titulo">
+				<div id="head">
+					<h2 class="headings-int">
+            Autoevaluación. Abordaje integral de la alergia alimentaria
+					</h2>
+				</div>
+				<div class="info">
+					<i class="fas fa-info fa-2x"></i>
+				</div>
+			</div>
+			<div class="instrucciones">
+        <p>El tratamiento de la alergia alimentaria requiere un enfoque multifacético que integra el manejo dietético, el uso de probióticos y prebióticos y la educación al paciente. Asimismo, para garantizar la seguridad del paciente, es crucial la explicación sobre el etiquetado de alimentos y las opciones que existen para el tratamiento de la alergia, ya sean farmacológicas, de inmunoterapia y el uso de biológicos, las cuales permiten un avance significativo en la reducción de la reactividad alérgica y la mejora en la calidad de vida del paciente.</p>
+				<p>Lee las siguientes preguntas y selecciona la opción que consideres correcta. Al finalizar, podrás conocer tu desempeño.</p>
+			</div>
+		</div>
+		<div class="row reactivos"></div>
+		<i class="ir-arriba fas fa-chevron-up fa-2x"></i>
+		<div class="row pager">
+			<div class="barraInferior">
+				<button id="btnPrevio" class="boton invisible cPrevio cPaginador" onClick="paginar('cPrevio')"><i
+						class="fas fa-chevron-left"></i></button>
+				<button id="btnPaginador" class="boton ocultar" disabled></button>
+				<button id="btnProximo" class="boton invisible cProximo cPaginador" onClick="paginar('cProximo')"><i
+						class="fas fa-chevron-right"></i></button>
+				<br />
+				<br />
+				<button id="btnRevisar" class="boton" onClick="revisar()">Revisar</button>
+				<button id="btnReiniciar" class="boton" onClick="reiniciar()">Siguiente intento</button>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>

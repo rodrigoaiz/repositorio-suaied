@@ -1,0 +1,89 @@
+::u4_act3_p1::
+¿Qué porcentaje de niñas y niños en el mundo occidental se ve afectado por la alergia alimentaria? {
+~3 %
+~5 %
+=8 %
+~10 %
+~* La prevalencia de alergias alimentarias en los niños ha aumentado en las últimas décadas, especialmente en los países occidentales, debido a varios factores, incluidos cambios en la dieta, el ambiente y la microbiota intestinal. En general, se estima que alrededor del 6-8 % de las niñas y los niños en el mundo occidental se ven afectados por alergias alimentarias.
+}
+
+::u4_act3_p2::
+¿Cuál de los siguientes es un posible efecto adverso de la inmunoterapia oral después de una dosis?{
+~Mejoría en la respuesta inmune
+~Aumento de la resistencia a la anafilaxia
+=Empeoramiento de la esofagitis eosinofílica
+~Reducción de la carga alérgica
+~* La esofagitis es un posible efecto adverso que puede ocurrir después de una dosis de inmunoterapia oral, especialmente en pacientes que están recibiendo tratamiento para alergias alimentaria. En el contexto de la OIT, el alérgeno ingerido puede desencadenar una reacción en el esófago, provocando inflamación y molestias.
+}
+
+::u4_act3_p3::
+¿Cuál de las siguientes vías de administración de inmunoterapia alimentaria tiene una mayor frecuencia de eventos adversos?{
+~Inmunoterapia subcutánea (SCIT)
+~Inmunoterapia epicutánea (EPIT)
+~Inmunoterapia sublingual (SLIT)
+=Inmunoterapia oral (OIT)
+~* Recuerda que este tratamiento se utiliza para desensibilizar a los pacientes con alergias alimentarias, exponiéndolos a cantidades progresivamente mayores del alérgeno alimentario de forma controlada. Este tratamiento tiene como objetivo reducir la severidad de las reacciones alérgicas al alérgeno y, en algunos casos, proporcionar una tolerancia a largo plazo. Este tratamiento también está asociado con ciertos riesgos y reacciones adversas, siendo el que mayormente reporta tasas de reacciones sistémicas.
+}
+
+::u4_act3_p4::
+Paciente femenina de 35 años con diagnóstico de alergia a la soya acostumbra a usar aceite Nutrioli Protect-Mente, cuya etiqueta dice que contiene aceite vegetal comestible puro de soya y ácido docosahexaenoico. ¿Cuál sería tu recomendación?{
+~Tiene que evitarlo por completo.
+=Puede seguir usándolo sin riesgo.
+~Puede usarlo de forma ocasional.
+~Usar la versión que sólo dice Nutrioli.
+~* De acuerdo con la Norma Oficial Mexicana NOM-051-SCFI/SSA1-2010, el aceite y la grasa de soya completamente refinados no se incluyen en la lista de ingredientes o aditivos que pueden causar hipersensibilidad, intolerancia o alergia, ya que el proceso de refinación elimina las proteínas alergénicas.
+}
+
+::u4_act3_p5::
+¿Cuál es el único anticuerpo monoclonal anti-IgE aprobado actualmente para uso clínico?{
+~Talizumab
+~Ligelizumab
+~Dupilumab
+=Omalizumab
+~* Recuerda que éste es un anticuerpo monoclonal que se une a la IgE, una molécula clave en las reacciones alérgicas. Al unirse a la IgE, el omalizumab impide que ésta se una a los receptores en las células mastocitos y basófilos, lo que reduce la liberación de sustancias inflamatorias —como la histamina—, las cuales causan los síntomas de las alergias.
+}
+
+::u4_act3_p6::
+¿Qué tratamiento es considerado como primera línea en casos graves de esofagitis eosinofílica?{
+~Talizumab
+~Ligelizumab
+=Dupilumab
+~Omalizumab
+~* Recuerda que este tratamiento puede ser eficaz para reducir la inflamación asociada con la esofagitis eosinofílica, debido a su acción en las vías inflamatorias mediadas por IL-4 e IL-13, que son clave en la patogenia de esta enfermedad.
+}
+
+::u4_act3_p7::
+¿Cuál es la principal preocupación de seguridad asociada con la OIT?{
+~Baja efectividad en niños menores de cinco años
+=Alta probabilidad de eventos adversos, incluida la anafilaxia
+~Falta de evidencia científica
+~Alto costo del tratamiento
+~* Recuerda que, aunque las reacciones graves son relativamente poco frecuentes, pueden ocurrir durante el tratamiento, especialmente cuando se aumenta la dosis del alérgeno en las primeras fases del tratamiento.
+}
+
+::u4_act3_p8::
+¿Cuál es el mecanismo de acción principal de los anticuerpos monoclonales en el tratamiento de la alergia alimentaria?{
+~Incremento de la producción de inmunoglobulina A (IgA)
+=Supresión de la vía IgE/FcεRI
+~Aumento de la tolerancia a múltiples alérgenos
+~Reducción de la inflamación eosinofílica
+~* Recuerda que este mecanismo se refiere a la interrupción o modulación de la vía inmunológica mediada por la IgE y su receptor asociado FcεRI. Esta vía es crucial en la respuesta alérgica, especialmente en las alergias alimentarias, donde la IgE juega un papel central en la activación de las células mastocitos y basófilos, lo que lleva a la liberación de mediadores inflamatorios, como la histamina, responsables de los síntomas alérgicos.
+}
+
+::u4_act3_p9::
+¿Qué vía de inmunoterapia ha mostrado ser efectiva específicamente para el tratamiento de la alergia al cacahuate?{
+~Inmunoterapia sublingual (SLIT)
+=Inmunoterapia epicutánea (EPIT)
+~Inmunoterapia subcutánea (SCIT)
+~Inmunoterapia intravenosa (IVIT)
+~* Los estudios preliminares han mostrado resultados promisorios, sugiriendo que esta inmunoterapia puede ayudar a disminuir la sensibilidad al cacahuate y proporcionar desensibilización sin causar reacciones graves. Los pacientes tratados han mostrado una mejoría significativa en la tolerancia a este alimento.
+}
+
+::u4_act3_p10::
+¿Cuál es el objetivo principal de la OIT en pacientes con alergias alimentarias?{
+~Eliminar la alergia de manera permanente.
+=Reducir el riesgo de reacciones graves ante pequeñas cantidades del alérgeno.
+~Desarrollar tolerancia inmediata a cualquier alérgeno.
+~Sustituir otros tratamientos biológicos.
+~* El objetivo principal de la inmunoterapia oral en pacientes con alergias alimentarias es inducir una tolerancia inmunológica a los alérgenos alimentarios específicos, lo que puede resultar en una desensibilización a largo plazo y reducir la gravedad de las reacciones alérgicas a esos alimentos.
+}

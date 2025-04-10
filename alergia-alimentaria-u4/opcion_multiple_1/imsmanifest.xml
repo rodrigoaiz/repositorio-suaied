@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is a Reload version 2.5.5 SCORM 1.2 Content Package document-->
+<!--Spawned from the Reload Content Package Generator - http://www.reload.ac.uk-->
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="MANIFEST-3A8A9398CA4BB01F205634A8B3775A6A" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+  </metadata>
+  <organizations default="ORG-6D60B3D1A07CA75FC19739434B246BC7">
+    <organization identifier="ORG-6D60B3D1A07CA75FC19739434B246BC7" structure="hierarchical">
+      <title>Organization</title>
+      <item identifier="ITEM-864D917862BC1A449324B08780B143C9" isvisible="true" identifierref="RES-759FC704EA1E4324D41C3DECC134794C">
+        <title>Opcion Multiple V6.4</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES-759FC704EA1E4324D41C3DECC134794C" type="webcontent" href="index.html" adlcp:scormtype="sco">
+      <file href="index.html" />
+      <file href="css/estilos.css" />
+      <file href="favicon.ico" />
+      <file href="js/jqueryui-v1.10.4.min.js" />
+      <file href="SCORM/conectividadSCORM.js" />
+    </resource>
+  </resources>
+</manifest>
+

@@ -1,0 +1,452 @@
+:root {
+	--azul: #0069d9;
+	--verde: #83c635;
+	--rojo: #f01b18;
+
+	--tamano: 50px;
+	--tam-sonar: 25px;
+	--color-OK: #83c635;
+	--color-noOK: #f01b18;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	/*  Usado para trabajar con definición 'em'  */
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	line-height: 1.8em;
+	text-align: left;
+	color: #000;
+	font-weight: 400;
+	margin: 2em;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: -moz-none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.row>* {
+	padding: 0;
+}
+
+.opcion-multiple {
+	box-shadow: 0 0 0 10px #fff, 0 15px 50px;
+}
+
+.opcion-multiple .encabezado {
+	margin-bottom: 10px;
+}
+
+.opcion-multiple .encabezado .info {
+	background-color: var(--azul);
+	color: #fff;
+	text-align: right;
+	padding: 10px 20px;
+	margin-top: 20px;
+}
+
+.opcion-multiple .encabezado .titulo {
+	padding: 0;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.opcion-multiple .encabezado .titulo .headings-int {
+	color: #000;
+	font-size: 1.8em;
+	text-align: left;
+	margin-top: 20px;
+}
+
+/* .opcion-multiple .encabezado .instrucciones {
+	padding: 0;
+} */
+
+.estilosinstruccion {
+	background-color: var(--azul);
+	color: #fff;
+	padding: 5px 10px;
+	margin-top: 3px;
+}
+
+#btnPaginador {
+	margin-left: 5px;
+	margin-right: 5px;
+	opacity: 1;
+	cursor: default;
+}
+
+.boton {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+.boton,
+.boton:hover,
+.boton:active,
+.boton:focus {
+	background-color: var(--azul);
+	color: #fff;
+}
+
+.boton:hover {
+	background-color: #0062cc;
+}
+
+.ir-arriba {
+	display: none;
+	padding: 15px;
+	background: #63c9e0;
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	border-radius: 50%;
+	z-index: 10000;
+}
+
+.pager {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.opcion-multiple>.reactivos>.reactivo {
+	position: relative;
+	border: 1px solid #fff;
+	padding: 5px 0;
+}
+
+.opcion-multiple>.reactivos>.reactivo:nth-child(odd) {
+	background-color: #e5e5e5;
+}
+
+.opcion-multiple>.reactivos>.reactivo:nth-child(even) {
+	background-color: #f0efef;
+}
+
+.opcion-multiple>.reactivos>.reactivo.vacio {
+	border: 1px solid var(--azul);
+}
+
+.blink {
+	animation: blink 2s linear infinite;
+	-webkit-animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+	50% {
+		opacity: 0.0;
+	}
+}
+
+@-webkit-keyframes blink {
+	50% {
+		opacity: 0.0;
+	}
+}
+
+.mostrar {
+	display: "";
+}
+
+.ocultar {
+	display: none !important;
+}
+
+.visible {
+	visibility: visible;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.opcion-multiple>.reactivos>.reactivo>.pregunta {
+	padding: 5px;
+}
+
+.opcion-multiple>.reactivos>.reactivo>.opciones>.opcion>.texto-respuesta {
+	font-family: 'Open Sans', sans-serif;
+	/* font-size: 0.9em; */
+	color: #000;
+	background-color: transparent;
+	border: none;
+	text-align: left;
+	white-space: pre-wrap;
+	width: 100%;
+	padding: 5px 10px;
+}
+
+.opcion-multiple>.reactivos>.reactivo>.opciones>.opcion>.texto-respuesta:not(.elegida):hover {
+	background-color: #f4edd9;
+}
+
+.opcion-multiple>.reactivos>.reactivo>.opciones>.opcion>.texto-respuesta:disabled:hover {
+	background-color: transparent;
+}
+
+.opcion-multiple>.reactivos>.reactivo>.opciones {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.opcion-multiple>.reactivos>.reactivo>.opciones>.opcion {
+	display: grid;
+	position: relative;
+	margin: 5px 0;
+}
+
+.opcion-multiple>.reactivos>.reactivo>.opciones>.opcion .btn-outline-primary:hover {
+	color: initial;
+	background-color: #f4edd9;
+}
+
+.opcion-multiple>.reactivos>.reactivo>.opciones>.opcion>.texto-respuesta {
+	text-align: left;
+	border: none;
+	border-radius: 0;
+}
+
+.opcion-multiple>.reactivos>.reactivo>.opciones>.opcion>.texto-respuesta.elegida {
+	background-color: var(--azul);
+	color: #fff;
+}
+
+.opcion-multiple>.reactivos>.reactivo>.opciones>.opcion>.texto-respuesta.elegida.bien {
+	background-color: transparent;
+	border: 1px solid var(--color-OK);
+	color: #000;
+}
+
+.opcion-multiple>.reactivos>.reactivo>.opciones>.opcion>.texto-respuesta.elegida.mal {
+	background-color: transparent;
+	border: 1px solid var(--color-noOK);
+	color: #000;
+}
+
+.barraInferior {
+	text-align: center;
+	clear: both;
+}
+
+/* ------------------ CLASES PARA RETROALIMENTACIONES TOOLTIP ------------------ */
+.tooltip {
+	filter: drop-shadow(2px 4px 10px #444);
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.tooltip-inner {
+	font-size: 1.1em;
+	text-align: left;
+	min-width: 280px;
+	padding: 10px;
+	z-index: 1000001;
+}
+
+@media (min-width: 992px) {
+	/*  lg  BS4   >= 992 px    */
+	.tooltip-inner {
+		min-width: 480px;
+	}
+}
+
+.tooltip.show {
+	opacity: 1;
+}
+
+.tooltip.primary .tooltip-inner {
+	background-color: #337ab7;
+}
+
+.tooltip.info .tooltip-inner {
+	background-color: #31b0d5;
+}
+
+.tooltip.success .tooltip-inner {
+	background-color: var(--color-OK);
+}
+
+.tooltip.warning .tooltip-inner {
+	background-color: #ec971f;
+}
+
+.tooltip.danger .tooltip-inner {
+	background-color: var(--color-noOK);
+}
+
+.success.bs-tooltip-end .tooltip-arrow:before {
+	border-right-color: var(--color-OK);
+}
+
+.danger.bs-tooltip-end .tooltip-arrow:before {
+	border-right-color: var(--color-noOK);
+}
+
+.success.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before,
+.success.bs-tooltip-top .tooltip-arrow::before {
+	border-top-color: var(--color-OK);
+}
+
+.success.bs-tooltip-bottom .tooltip-arrow::before {
+	border-bottom-color: var(--color-OK);
+}
+
+.danger.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before,
+.danger.bs-tooltip-top .tooltip-arrow::before {
+	border-top-color: var(--color-noOK);
+}
+
+.danger.bs-tooltip-bottom .tooltip-arrow::before {
+	border-bottom-color: var(--color-noOK);
+}
+
+
+/* ---------------------- EFECTO PULSO PARA PALOMITAS Y TACHES ----------------- */
+.pulso {
+	width: var(--tam-sonar);
+	height: var(--tam-sonar);
+	position: absolute;
+	margin: auto;
+	border-radius: 50%;
+	font-size: calc(0.7 * var(--tam-sonar));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	z-index: 1;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.opcion-multiple>.reactivos>.reactivo>.opciones>.opcion>.texto-respuesta .pulso {
+	/* SOLO PARA OPCION MULTIPLE*/
+	left: -30px;
+}
+
+.pulso:before,
+.pulso:after {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	z-index: -1;
+	opacity: 0.7;
+}
+
+.pulso:before {
+	animation: pulso 1s ease-out infinite;
+}
+
+.pulso:after {
+	animation: pulso 1s 0.5s ease-out infinite;
+}
+
+.pulso i {
+	font-size: var(--tam-sonar);
+}
+
+@keyframes pulso {
+	100% {
+		transform: scale(2.5);
+		opacity: 0;
+	}
+}
+
+.OK {
+	color: var(--color-OK);
+	left: -30px;
+}
+
+.OK:before,
+.OK:after {
+	background: var(--color-OK);
+}
+
+.noOK {
+	color: var(--color-noOK);
+	left: -30px;
+}
+
+.noOK:before,
+.noOK:after {
+	background: var(--color-noOK);
+}
+
+.contestada>.pulso {
+	left: 0;
+}
+
+.btn-check:focus+.btn-outline-primary {
+	box-shadow: none;
+}
+
+.btn-check:checked+.btn-outline-primary {
+	background-color: var(--azul);
+	color: #fff;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 992px) {
+	body {
+		padding: 0;
+		border: none;
+		box-shadow: none;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		margin: 0.5em;
+	}
+
+	.info,
+	.estilosinstruccion p {
+		color: #fff;
+	}
+}
+
+@media (max-width: 869px) {
+	.opcion-multiple {
+		box-shadow: none;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	html {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+button {
+	margin: 1px;
+}

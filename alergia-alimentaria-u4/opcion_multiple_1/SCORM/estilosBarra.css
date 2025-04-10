@@ -1,0 +1,88 @@
+@charset "UTF-8";
+.barraNavegacion{
+
+}
+table.tablaInfo{
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    /*border: 1px solid #999;*/
+}
+td.celdaBarra{
+    font-family: sans-serif;
+    font-size: 12px;
+    /* font-weight: bold; */
+    text-align: left;
+    color: #303131;
+    /*word-break: break-all;*/
+    padding: 0;
+    white-space: nowrap;
+    /* overflow: hidden; */
+}
+td.celdaBarra h1{
+    font-size: 18px;
+    font-family: "Arial Black", Arial, Helvetica, sans-serif;
+    /* display: inline; */
+    display: none;
+    margin: 0;
+    padding: 0;
+    color: #303131;
+}
+td.celdaTextoBarra{
+	text-align: left;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 11px;
+}
+tr.celdasVacias{
+	height: 14px;
+}
+tr.lineaProgreso{
+	height: 6px;
+}
+tr.lineaProgreso td:first-child{
+	border-radius: 3px 0 0 3px;
+}
+tr.lineaProgreso td:last-child{
+	border-radius: 0 3px 3px 0;
+}
+td.porcentaje{
+    color: #666;
+	text-align: right;
+	padding-left: 0.5em;
+	font-size: 18px;
+	font-weight: bold;
+	width: 1.5em;
+}
+td.incompleta{
+    background-color: #FF0;
+    background: url("img/pixelesAmarillos.png") repeat-x;
+}
+td.realizada{
+    background-color: #0F0;
+    background: url("img/pixelesVerdes.png") repeat-x;
+}
+td.noIntentada{
+    background-color: #FAFAFA;
+    background: url("img/pixelesGrises.png") repeat-x;
+}
+div.puntaRealizada{
+    background: url("img/puntaVerde.png") no-repeat;
+}
+div.puntaIncompleta{
+    background: url("img/puntaAmarilla.png") no-repeat;
+}
+div.puntaNoIntentada{
+    background: url("img/puntaGris.png") no-repeat;
+}
+td.celdaBarra div{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 15px;
+    height: 26px;
+    vertical-align: middle;
+}
+td.conFlecha{
+    width: 15px;
+    padding: 0;
+}
